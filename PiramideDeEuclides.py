@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Feb 20 19:19:25 2024
-
-@author: erick
-"""
-
 n = int(input("Ingrese el numero de filas a generar: "))
 
 Triangulo = [[1]]
@@ -16,4 +9,6 @@ for i in range(1, n):
     Triangulo.append(filaTriangulo)
 
 for filaTriangulo in Triangulo:
-    print(filaTriangulo)
+    text = str(filaTriangulo)
+    x = text.center(n * 10)
+    print(x)
